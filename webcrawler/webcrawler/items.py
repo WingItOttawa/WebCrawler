@@ -8,7 +8,8 @@
 import scrapy
 
 
-class WebcrawlerItem(scrapy.Item):
+class PublicationWebpage(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    current_url = scrapy.Field()
+    destination_url = scrapy.Field()
     pass
