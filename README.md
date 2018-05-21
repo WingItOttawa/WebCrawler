@@ -31,9 +31,9 @@ scrapy crawl crawler -a name="CBC" -a domain="www.cbc.ca" -a seed="http://www.cb
 
 To break it down:
 - Using `-a` indicates a command line argument
-- Using `s` indicates a custom setting
+- Using `-s` indicates a custom setting
 
-3. Results of the crawl can be found in the `WebCrawler/webcrawler/data/[publication_name]` directory (see Notes for details)
+3. Results of the crawl can be found in the `WebCrawler/webcrawler/data/[publication_name]` directory (see [Notes](#notes) for details)
 
 
 ## Notes
