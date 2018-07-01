@@ -46,6 +46,9 @@ To break it down:
 2. If it has been crawled before but is less than two days old, crawl.
 3. Otherwise, don’t crawl.
 
+After a website has been crawled, the Title, Javascript and HTML is then removed, and the remaining text is then written to a file.
+After all of the files have been written for a publication source, similar text between files is found and is assumed to be redundant, and so the similar texts would be removed from all of the files.
+In theory, this would increase the chances of the resulting article text to only contain article contents.
 
 # Design Plan (Deprecated)
 Here’s the way I see this being designed. Scrapy has two basic customizable components: the `start_urls` (i.e. the initial seeds for the crawler), and the `parse` function. In order to run the crawler (also known as a spider), we use a command line argument like this: `scrapy crawl spider_name`. The neat thing is that we can pass arguments that can be used for customization. So we should be able to write a single spider file, then pass in each news publication’s base URL for crawling (as well as the domain limiter to prevent it from crawling unrelated sites), something like this:
