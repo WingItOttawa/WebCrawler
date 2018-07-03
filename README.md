@@ -70,7 +70,7 @@ The [`word-frequency`](#word-frequency-collection) collection contains a list of
 | wing | probability |
 | ---- | ----------- |
 
-The [`wing-probability`](#wing-probability-collection) collection is used to store the probability of any given article having a given political leaning. **This collection should never be added to, only updated.**
+The [`wing-probability`](#wing-probability-collection) collection is used to store the probability of any given article having a given political leaning. **This collection should almost exclusively be updated - the only time it should be added to is when political leanings are modified.**
 
 
 # Crawling Algorithm
