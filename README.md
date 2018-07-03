@@ -46,15 +46,15 @@ We will be using Firebase as a host and using Firestore as a database.
 
 ## `master` collection
 
-| docId | title | url | content | wing | wing-value |
-| ----- | ----- | --- | ------- | ---- | ---------- |
+| title | url | content | wing | wing-value |
+| ----- | --- | ------- | ---- | ---------- |
 
 The [`master`](#master-collection) collection contains every document that is crawled by the web crawler, post filtering of unnecessary content by the [`filter`](#filter-collection) collection.
 
 ## `filter` collection
 
-| docId | title | url | content |
-| ----- | ----- | --- | ------- |
+| title | url | content |
+| ----- | --- | ------- |
 
 The [`filter`](#filter-collection) collection is a temporary space to store documents that have just been crawled. Once a significant number of documents has been crawled (e.g. 100), the entries are checked for common phrases in order to eliminate things like navbars, footers, ads, etc. that are present on multiple pages for a particular news publication. Then, they are uploaded in bulk to the [`master`](#master-collection) collection, and the [`filter`](#filter-collection) collection is emptied.
 
@@ -70,7 +70,7 @@ The [`word-frequency`](#word-frequency-collection) collection contains a list of
 | wing | probability |
 | ---- | ----------- |
 
-The [`wing-probability`](#wing-probability-collection) collection is used to store the probability of any given article having a given political leaning.
+The [`wing-probability`](#wing-probability-collection) collection is used to store the probability of any given article having a given political leaning. **This collection should never be added to, only updated.**
 
 
 # Crawling Algorithm
