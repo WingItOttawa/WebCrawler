@@ -37,7 +37,7 @@ To break it down:
 - Using `-a` indicates a command line argument
 - Using `-s` indicates a custom setting
 
-3. Results of the crawl can be found in the `WebCrawler/webcrawler/data/[publication_name]` directory (see [Notes](#notes) for details)
+3. Results of the crawl can be found in the `WebCrawler/webcrawler/data/[publication_name]` directory (see [Next Steps](#next-steps) for information about this in particular)
 
 
 # Database Integration
