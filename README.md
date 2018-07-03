@@ -6,7 +6,7 @@
     - [`master` collection](#master-collection)
     - [`filter` collection](#filter-collection)
     - [`word-frequency` collection](#word-frequency-collection)
-    - [`leaning-probability` collection](#leaning-probability-collection)
+    - [`wing-probability` collection](#wing-probability-collection)
 - [Crawling Algorithm](#crawling-algorithm)
 - [Next Steps](#next-steps)
 
@@ -47,7 +47,7 @@ We will be using Firebase as a host and using Firestore as a database.
 ## `master` collection
 
 | docId | title | url | content | wing | wing-value |
-| ----- | ----- | --- | ------- | ---- | --------- |
+| ----- | ----- | --- | ------- | ---- | ---------- |
 
 The [`master`](#master-collection) collection contains every document that is crawled by the web crawler, post filtering of unnecessary content by the [`filter`](#filter-collection) collection.
 
@@ -65,12 +65,12 @@ The [`filter`](#filter-collection) collection is a temporary space to store docu
 
 The [`word-frequency`](#word-frequency-collection) collection contains a list of every unique word that appears in every article in the [`master`](#master-collection) collection, as well as a value indicating how likely it is to appear in an article of a given political leaning.
 
-## `leaning-probability` collection
+## `wing-probability` collection
 
-| leaning | probability |
-| ------- | ----------- |
+| wing | probability |
+| ---- | ----------- |
 
-The [`leaning-probability`](#leaning-probability-collection) collection is used to store the probability of any given article having a given political leaning.
+The [`wing-probability`](#wing-probability-collection) collection is used to store the probability of any given article having a given political leaning.
 
 
 # Crawling Algorithm
