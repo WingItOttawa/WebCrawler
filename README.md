@@ -15,7 +15,7 @@
 
 Note: these instructions are for macOS.
 1. Navigate to your WingIt project folder
-2. Clone the repository from here: https://github.com/WingItOttawa/WebCrawler
+2. Clone the repository from here: https://github.com/WingItOttawa/WebCrawler.git
 3. Install Scrapy using one of the methods listed under this installation guide (good luck this took a lot of effort): https://doc.scrapy.org/en/1.5/intro/install.html#mac-os-x. Try the virtualenv method first, but don’t hesitate to give the Homebrew one a shot. You might need to use `pip3` instead of `pip`. You should be able to check that Scrapy is installed using `which scrapy`.
 
 
