@@ -103,4 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# firestore service key
+/wingit-service-key.json
+
 .DS_Store

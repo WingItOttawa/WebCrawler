@@ -1,7 +1,7 @@
 import os
 import traceback
 from difflib import SequenceMatcher
-
+# TODO: Move out of WebCrawler
 '''
 TextPostProcessor applies additional processing on the crawled articles after crawling has been finished; this processing involves removing common substrings found in the articles.
 
