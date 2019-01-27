@@ -41,7 +41,6 @@ class Crawler(CrawlSpider):
     def parse_items(self, response):
         # extract the title
         title = response.css('title::text').extract()
-        #print("Parsing: " + ', '.join(title))
 
         # extract the links to follow
         links = LinkExtractor(canonicalize=True, unique=True).extract_links(response)
@@ -53,8 +52,6 @@ class Crawler(CrawlSpider):
                 item['destination_url'] = link.url
 
         item['publication'] = self.publication.lower()
-        #print "type(item['publication']) is", type(item['publication']), "and is", item['publication']
-
         item['content'] = response.body
 
         return item
