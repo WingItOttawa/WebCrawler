@@ -1,0 +1,10 @@
+{
+    "contents": 
+    [
+        {
+            "publication" : "cbc",
+            "domain": "www.cbc.ca",
+            "seeds": ["http://www.cbc.ca/news"]
+        }
+    ]
+}
